@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundfocs"
+    tools:context="com.example.root.thaqayif.SportActivity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/woooodensign" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/mud" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_above="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:elevation="1dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/grass" />
+
+    <Button
+        android:id="@+id/questionsshow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/banswer1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView5"
+        android:background="@drawable/qutionbak"
+        android:textAllCaps="false"
+        android:textColor="@color/bonynew"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/banswer1"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:background="@drawable/qutionbak"
+        android:text="20000كم"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/bonynew"
+        android:textSize="20dp"
+        android:layout_above="@+id/banswer2"
+        android:layout_alignLeft="@+id/banswer2"
+        android:layout_alignStart="@+id/banswer2" />
+
+    <Button
+        android:id="@+id/banswer2"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:background="@drawable/qutionbak"
+        android:text="39439كم"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/bonynew"
+        android:textSize="20dp"
+        android:layout_above="@+id/banswer3"
+        android:layout_alignLeft="@+id/banswer3"
+        android:layout_alignStart="@+id/banswer3" />
+
+    <Button
+        android:id="@+id/banswer3"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="74dp"
+        android:background="@drawable/qutionbak"
+        android:text="92348390134كم"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/bonynew"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/Txvscorenum"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Txvscore"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:elevation="1dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/bonynew"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/hartgif"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:elevation="1dp"
+        android:text="محاولات"
+        android:textColor="@color/bonynew"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Txvscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gifTextView"
+        android:layout_toLeftOf="@+id/Txvscorenum"
+        android:layout_toStartOf="@+id/Txvscorenum"
+        android:elevation="1dp"
+        android:text="نقاط"
+        android:textColor="@color/bonynew"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/txvlifes"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:elevation="1dp"
+        android:text="3"
+        android:textAlignment="center"
+        android:textColor="@color/bonynew"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewsince"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+
+    <pl.droidsonroids.gif.GifTextView
+        android:id="@+id/gifTextView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/scorecoin"
+        android:layout_above="@+id/textView2"
+        android:layout_toLeftOf="@+id/Txvscorenum"
+        android:layout_alignLeft="@+id/Txvscore"
+        android:layout_alignStart="@+id/Txvscore" />
+
+    <pl.droidsonroids.gif.GifTextView
+        android:id="@+id/hartgif"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="7dp"
+        android:layout_toStartOf="@+id/banswer1"
+        android:background="@drawable/heart" />
+
+    <Button
+        android:id="@+id/bqustionshow"
+        android:layout_width="250dp"
+        android:layout_height="120dp"
+        android:layout_above="@+id/banswer1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:background="@color/trans"
+        android:text="Button"
+        android:textColor="@color/bonynew"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txvlifes"
+        android:layout_centerHorizontal="true"
+        android:text="رياضة"
+        android:textColor="@color/bonynew"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

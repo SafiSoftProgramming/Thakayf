@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/backgroundfocs_blue"
+    android:layout_height="match_parent"
+    tools:context="com.example.root.thaqayif.CelebrateActivity">
+
+    <pl.droidsonroids.gif.GifTextView
+        android:id="@+id/cong_starmore5"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView_username"
+        android:layout_marginTop="111dp"
+        android:background="@drawable/starsmore"
+        android:elevation="-1dp" />
+
+    <pl.droidsonroids.gif.GifTextView
+        android:id="@+id/cong_star"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/textView_username"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/cong_star" />
+
+    <pl.droidsonroids.gif.GifTextView
+        android:id="@+id/cong_starmore"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignBottom="@+id/cong_star"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:elevation="-1dp"
+        android:background="@drawable/starsmore" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="39dp"
+        android:text="مبروووووك"
+        android:textAlignment="center"
+        android:textColor="@color/goldt"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView_facebook"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/cong_star"
+        android:layout_alignTop="@+id/imageView_gmil"
+        app:srcCompat="@drawable/facebookico" />
+
+    <ImageView
+        android:id="@+id/imageView_youtube"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageView_insta"
+        android:layout_marginEnd="20dp"
+        app:srcCompat="@drawable/youtubeicon" />
+
+    <ImageView
+        android:id="@+id/imageView_insta"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/cong_star"
+        android:layout_alignTop="@+id/imageView_facebook"
+        app:srcCompat="@drawable/instaico" />
+
+    <ImageView
+        android:id="@+id/imageView_gmil"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="47dp"
+        android:layout_marginStart="20dp"
+        app:srcCompat="@drawable/gmailico" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_above="@+id/imageView_facebook"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="31dp"
+        android:text="أحسنت لقد أستطعت الأجابة على 100 سؤال أذا وجدت الأمر شيق تفضل بمتابعة أعمالنا علي صفحات التواصل بالأسفل و أذا كان لديك أي تعليق أو ملحوظه يمكنك التواصل معنا عبر البريد الألكتروني وسنكون سعداء بمتابعة رسائلك ."
+        android:textAlignment="center"
+        android:textColor="@color/goldt"
+        android:textDirection="rtl"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView5"
+        android:text="username"
+        android:textAlignment="center"
+        android:textColor="@color/goldt"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

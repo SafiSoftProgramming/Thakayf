@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundfocs_blue"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.example.root.thaqayif.LoginActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="41dp"
+        android:elevation="1dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/grass"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:id="@+id/rlayoutlog"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp">
+
+        <TextView
+            android:id="@+id/txvname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/newbackdark"
+            android:text=" أسمك :"
+            android:textColor="@color/goldt"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/txdname"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txvname"
+            android:layout_marginTop="0dp"
+            android:background="@color/newbackdark"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@color/goldt"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txvage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txdname"
+            android:layout_marginTop="15dp"
+            android:background="@color/newbackdark"
+            android:text=" عمرك :"
+            android:textColor="@color/goldt"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/txvginder"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/layage"
+            android:layout_marginTop="15dp"
+            android:background="@color/newbackdark"
+            android:text=" حدد الجنس :"
+            android:textColor="@color/goldt"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:id="@+id/layage"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txvage"
+            android:elevation="1dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Spinner
+                android:id="@+id/spinnerage"
+                android:layout_width="34dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_arrow_drop_down_circle" />
+
+            <TextView
+                android:id="@+id/txvselectedage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/newbackdark"
+                android:textAlignment="center"
+                android:textColor="@color/goldt"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layginder"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txvginder"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Spinner
+                android:id="@+id/spinnerginder"
+                android:layout_width="34dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_arrow_drop_down_circle" />
+
+            <TextView
+                android:id="@+id/txvselectedginder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/newbackdark"
+                android:textAlignment="center"
+                android:textColor="@color/goldt"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txvmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/layginder"
+            android:layout_marginTop="15dp"
+            android:background="@color/newbackdark"
+            android:text=" أدخل بريدك الألكتروني :"
+            android:textColor="@color/goldt"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/txdmail"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txvmail"
+            android:background="@color/newbackdark"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@color/goldt"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnstart"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@color/newbackdark"
+
+        android:elevation="23dp"
+        android:padding="10dp"
+        android:radius="10dp"
+        android:shape="rectangle"
+        android:text="أنطلق الي ثقائف "
+        android:textAlignment="center"
+        android:textColor="@color/yal"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txventerdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnstart"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="30dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+                                                                                                                                                                                                                
+        app:srcCompat="@drawable/mud" />
+
+    <pl.droidsonroids.gif.GifTextView
+        android:id="@+id/gifTextView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="0.91"
+        android:layout_x="0dp"
+        android:layout_y="-26dp"
+        android:background="@drawable/frasha"
+        android:layout_alignBottom="@+id/imageView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:textColor="@color/goldt"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:text="أهلآ بك" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/goldt"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="يبدو انك شخص ذو معرفة دعنا نتعرف عليك" />
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.root.thaqayif">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+
+
+    <supports-screens
+
+        android:normalScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="ثقائِفُ"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".OpeningActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ChooseActivity"  android:screenOrientation="portrait" />
+        <activity android:name=".SinceActivity"  android:screenOrientation="portrait" />
+        <activity android:name=".GorafyaActivity"  android:screenOrientation="portrait" />
+        <activity android:name=".HistoryActivity"  android:screenOrientation="portrait" />
+        <activity android:name=".SkafaActivity"  android:screenOrientation="portrait" />
+        <activity android:name=".SportActivity" android:screenOrientation="portrait"  />
+        <activity android:name=".InvintActivity" android:screenOrientation="portrait"  />
+        <activity android:name=".CelebrateActivity" android:screenOrientation="portrait" />
+        <receiver android:name=".Notreciver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

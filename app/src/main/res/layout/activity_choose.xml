@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundfocs_blue"
+        android:fitsSystemWindows="true"
+        tools:context="com.example.root.thaqayif.ChooseActivity">
+
+
+    <pl.droidsonroids.gif.GifTextView
+            android:id="@+id/gifsince"
+            android:layout_width="175dp"
+            android:layout_height="55dp"
+            android:background="@drawable/since"
+            android:layout_below="@+id/imageView10"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="9dp"/>
+
+    <pl.droidsonroids.gif.GifTextView
+            android:id="@+id/gifmap"
+            android:layout_width="175dp"
+            android:layout_height="55dp"
+            android:layout_alignBaseline="@+id/gifsince"
+            android:layout_alignBottom="@+id/gifsince"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/map"/>
+
+    <pl.droidsonroids.gif.GifTextView
+            android:id="@+id/gifhistory"
+            android:layout_width="175dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/gifsince"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/history"/>
+
+    <pl.droidsonroids.gif.GifTextView
+            android:id="@+id/gifbook"
+            android:layout_width="175dp"
+            android:layout_height="55dp"
+            android:layout_alignBaseline="@+id/gifhistory"
+            android:layout_alignBottom="@+id/gifhistory"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/booknew"/>
+
+    <pl.droidsonroids.gif.GifTextView
+            android:id="@+id/gifsport"
+            android:layout_width="175dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/gifhistory"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/sport"/>
+
+    <pl.droidsonroids.gif.GifTextView
+            android:id="@+id/gifinvint"
+            android:layout_width="175dp"
+            android:layout_height="55dp"
+            android:layout_alignBaseline="@+id/gifsport"
+            android:layout_alignBottom="@+id/gifsport"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/invint"/>
+
+    <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:elevation="1dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/bigsign"/>
+
+    <TextView
+            android:id="@+id/txtotalscoore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txvname"
+            android:layout_centerHorizontal="true"
+            android:elevation="1dp"
+            android:text="70000"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/newbackdark"
+            android:textSize="25dp"
+            android:textStyle="bold|italic"/>
+
+    <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:elevation="1dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/grass"
+            android:layout_above="@+id/imageView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+    <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/mud"/>
+
+    <TextView
+            android:id="@+id/txvname"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/textView10"
+            android:layout_centerHorizontal="true"
+            android:elevation="1dp"
+            android:text="  مصطفي"
+            android:textAlignment="center"
+            android:textColor="@color/goldt"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="1dp"
+            android:text="  أجمالي نقاط"
+            android:textAlignment="center"
+            android:textColor="@color/goldt"
+            android:textSize="10dp"
+            android:layout_below="@+id/giftroph"
+            android:layout_alignRight="@+id/giftroph"
+            android:layout_alignEnd="@+id/giftroph"
+            android:layout_alignLeft="@+id/giftroph"
+            android:layout_alignStart="@+id/giftroph"/>
+
+    <pl.droidsonroids.gif.GifTextView
+            android:id="@+id/giftroph"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:elevation="1dp"
+            android:layout_marginTop="51dp"
+            android:background="@drawable/troph"/>
+
+    <TextView
+            android:id="@+id/textView6"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/giftroph"
+            android:layout_marginTop="14dp"
+            android:layout_toStartOf="@+id/txvname"
+            android:elevation="1dp"
+            android:text="نقاط علوم"
+            android:textAlignment="center"
+            android:textColor="@color/goldt"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:id="@+id/textView9"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView6"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_alignStart="@+id/textView10"
+            android:elevation="1dp"
+            android:text="نقاط جغرافيا"
+            android:textAlignment="center"
+            android:textColor="@color/goldt"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:id="@+id/textView10"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_toEndOf="@+id/txvname"
+            android:elevation="1dp"
+            android:text="نقاط ثقافة"
+            android:textAlignment="center"
+            android:textColor="@color/goldt"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:id="@+id/textView11"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView10"
+            android:layout_below="@+id/txvname"
+            android:elevation="1dp"
+            android:text="نقاط مخترع"
+            android:textAlignment="center"
+            android:textColor="@color/goldt"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:id="@+id/textView7"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txvname"
+            android:layout_alignStart="@+id/textView6"
+            android:elevation="1dp"
+            android:text="نقاط تاريخ"
+            android:textAlignment="center"
+            android:textColor="@color/goldt"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:id="@+id/textView8"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView7"
+            android:layout_below="@+id/txvname"
+            android:elevation="1dp"
+            android:text="نقاط رياضة"
+            android:textAlignment="center"
+            android:textColor="@color/goldt"
+            android:textStyle="bold"/>
+
+    <com.google.android.gms.ads.AdView
+            android:id="@+id/chooseadView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
+
+    <TextView
+            android:id="@+id/txhistory"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView7"
+            android:layout_below="@+id/textView7"
+            android:layout_toStartOf="@+id/txvname"
+            android:elevation="1dp"
+            android:text="70"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:id="@+id/txthkafa"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_toEndOf="@+id/txvname"
+            android:elevation="1dp"
+            android:text="70"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:id="@+id/txmap"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView9"
+            android:layout_below="@+id/textView9"
+            android:elevation="1dp"
+            android:text="70"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:id="@+id/txinvint"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView11"
+            android:layout_below="@+id/textView11"
+            android:elevation="1dp"
+            android:text="70"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:id="@+id/txsince"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView6"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_below="@+id/textView6"
+            android:elevation="1dp"
+            android:text="70"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:id="@+id/txsport"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView8"
+            android:layout_alignStart="@+id/textView8"
+            android:layout_below="@+id/textView8"
+            android:elevation="1dp"
+            android:text="70"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/imageView_star"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/gifsince"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/nostar" />
+
+</RelativeLayout>
