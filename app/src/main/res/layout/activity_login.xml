@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:background="@drawable/backgd"
+    tools:context=".LoginActivity">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="280dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_loginhead" />
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_player_icon" />
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="13dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_player_text" />
+
+
+
+
+        <EditText
+            android:id="@+id/edtxt_player_name"
+            android:layout_width="285dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_player_name_edittext"
+            android:hint="أسم اللاعب"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="#ACACAC"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txtv_insert_player_name_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:visibility="invisible"
+            android:text="من فضلك أدخل اسم اللاعب او سجل من خلال فيسبوك"
+            android:textSize="12sp"
+            android:textColor="@color/white"/>
+
+        <ImageButton
+            android:id="@+id/btn_sign_up"
+            android:layout_width="285dp"
+            android:layout_height="33dp"
+           android:layout_marginTop="5dp"
+            android:background="@drawable/btn_eff_start_game" />
+
+        <ImageView
+            android:layout_width="169dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ic_or_facebook" />
+
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="33dp"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/ic_facebook_btn_bg"
+            android:orientation="horizontal">
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+</RelativeLayout>

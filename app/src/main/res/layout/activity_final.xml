@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:background="@drawable/backgd"
+    tools:context=".FinalActivity">
+
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scrollbars="none">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="-15dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imgv_question_type"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/btn_eff_reyada" />
+
+            <TextView
+                android:id="@+id/txtv_question_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "رياضه"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/ic_profile_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/logo_circular_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_thaqayif_round"
+                app:civ_border_color="#FFA000"
+                app:civ_border_width="1dp"
+                app:civ_shadow="true"
+                app:civ_shadow_radius="0" />
+        </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_thaqayif_name" />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginStart="-15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/ic_profile_bg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/player_circular_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_thaqayif_round"
+                app:civ_border_color="#FFA000"
+                app:civ_border_width="1dp"
+                app:civ_shadow="true"
+                app:civ_shadow_radius="0" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtv_player_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "أسم اللاعب"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/ic_profile_bg"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <pl.droidsonroids.gif.GifTextView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ic_coin"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/txtv_score_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "أجمالى نقاط رياضة"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "1000"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/img_player_stars_rate"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_stars_rate_nun" />
+
+        <TextView
+            android:id="@+id/txtv_message_mabrok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="270dp"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/ic_questions_bg">
+
+            <ImageView
+                android:id="@+id/img_final_rate"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:adjustViewBounds="true"
+                android:layout_marginStart="10dp"/>
+
+
+            <TextView
+                android:id="@+id/txtv_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+
+    <ImageButton
+        android:id="@+id/btn_share_final_post_facebook"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_eff_facebook_share" />
+
+    </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
